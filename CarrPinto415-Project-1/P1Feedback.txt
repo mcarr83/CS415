@@ -1,0 +1,67 @@
+Report feedback from Haley Sheridan and Gabby Luna
+
+Task 1: 
+"The consecutive integer checking algorithm has at most 3
+comparisons which will result in the running time to be in O(n)"
+
+-Not sure what you mean here, your graph proves this wrong putting its average at above 500 at times.
+
+"Small values of m and n yield the GCD faster than larger values on both algorithms, to an exponential
+number of operations."
+
+-You have labeled Euclid's Algorithm logarithmic and Consecutive integer checking linear so whats exponential?
+
+
+Task 2:
+"## DOUBLE CHECK ##"
+
+-May want to erase this..
+
+"These values of M and N are used as values for the Fibonacci sequence, giving the values of the Mth 
+and Nth term of that sequence."
+
+-The larger of m and n is F(k+1) making it the (k+1)th term in the sequence. Making the other the kth.
+
+" The upper bound of k is O()"
+
+- is O(...?), this is in more than one spot
+
+"The worst-case efficiency class of the algorithm for computing its GCD is in O() because we use
+the consecutive integer checking algorithm to compute the GCD of the values produced by F(k)."
+
+-false. You are not using consecutive integer checking in Task two. You are using two numbers which have been proven not to have
+a gcd greater than 1. That would be gcd(F(k+1), F(k)). This forces the max number of modulo divisions every time, 
+aka producing a worst case scenario.
+
+"As shown with the Fibonacci’s efficiency class versus the consecutive integer checking algorithm and the euclidean
+algorithm’s efficiency classes, they prove that Fibonacci is the worst in the case of computing values for GCD."
+
+-See above, you are still using Euclid's algorithm
+
+"For smaller values of k the algorithm grows exponentially with many divisions and maintains that
+property as the value of k increases, until eventually being consistent at a steady amount of
+divisions being performed per GCD calculation."
+
+-Try zooming into the graph. The extreme difference in y axis values and x axis values distorts things.
+	For example try setting the range for x and y axis to 100 or 200, it will no longer look so extreme. 
+	
+-You have not mentioned what measuring the time to execute would do compared to counting operations. 
+
+Task 3:
+
+-I'm not sure this counts as linear. its very conical and the data has quite a spread. 
+
+"With smaller lists the number of comparisons are equal to the number of comparisons to be made"
+
+-...?
+
+"A list of prime
+numbers were generated for each M and N (whose product resulted in each value of M and N),
+then the total number of comparisons made by both lists were graphed with the correlation of
+the list with the largest size.
+
+-A list of prime numbers were generated for m and n (The product of those primes would equal the original number (m or n) Not sure thats true.
+if you are then ok.
+
+-the total number of comparisons made BETWEEN the two lists 
+
